@@ -1,14 +1,12 @@
 import { getImagesByQuery } from './js/pixabay-api';
 import {
   clearGallery,
-  createLightbox,
-  renderGallery,
   hideLoader,
+  renderGallery,
   showLoader,
 } from './js/render-functions';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-
 const refs = {
   form: document.querySelector('.form'),
   buttonInput: document.querySelector('.js-button-search'),
@@ -49,14 +47,12 @@ form.addEventListener('submit', e => {
         });
         return;
       }
-
       renderGallery(images);
-      createLightbox();
     })
     .catch(error => {
       iziToast.error({
         message:
-          'Sorry, there are no images matching your search query. Please try again!',
+          'Sorry, there are no images matching your search query. Please try again!error',
         backgroundColor: '#e74c3c',
         messageColor: '#fff',
       });
