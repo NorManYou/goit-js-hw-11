@@ -26,7 +26,7 @@ form.addEventListener('submit', e => {
   if (!usersSearchValue) {
     hideLoader();
     iziToast.show({
-      message: 'Введіть текст для пошуку',
+      message: 'Some to searce.',
       position: 'topRight',
       backgroundColor: '#5c1e18',
       messageColor: '#bcbcbc',
@@ -40,7 +40,7 @@ form.addEventListener('submit', e => {
     .then(images => {
       if (!images.length) {
         iziToast.show({
-          message: `За запитом "${usersSearchValue}" не знайдено жодного результату.`,
+          message: `Not found "${usersSearchValue}" any result.`,
           position: 'topRight',
           backgroundColor: '#e74c3c',
           messageColor: '#fff',
