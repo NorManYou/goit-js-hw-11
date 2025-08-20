@@ -28,8 +28,8 @@ form.addEventListener('submit', e => {
     iziToast.show({
       message: 'Введіть текст для пошуку',
       position: 'topRight',
-      backgroundColor: '#e74c3c',
-      messageColor: '#fff',
+      backgroundColor: '#5c1e18',
+      messageColor: '#bcbcbc',
     });
     return;
   }
